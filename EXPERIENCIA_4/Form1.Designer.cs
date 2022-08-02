@@ -28,81 +28,182 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.Navegador = new System.Windows.Forms.GroupBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.txt_URL = new System.Windows.Forms.TextBox();
+            this.btn_home = new System.Windows.Forms.Button();
+            this.btn_Ir = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.btn_forward = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
+            this.cbox_favoritos = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.chk_visible = new System.Windows.Forms.CheckBox();
+            this.txt_pass = new System.Windows.Forms.TextBox();
+            this.btn_cerrar_retardo = new System.Windows.Forms.Button();
+            this.temporizador_cierre = new System.Windows.Forms.Timer(this.components);
+            this.Navegador.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // Navegador
             // 
-            this.groupBox1.Controls.Add(this.webBrowser1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 147);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 291);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.Navegador.Controls.Add(this.webBrowser1);
+            this.Navegador.Location = new System.Drawing.Point(15, 80);
+            this.Navegador.Name = "Navegador";
+            this.Navegador.Size = new System.Drawing.Size(962, 376);
+            this.Navegador.TabIndex = 0;
+            this.Navegador.TabStop = false;
+            this.Navegador.Text = "Navegador";
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser1.Location = new System.Drawing.Point(3, 18);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(770, 270);
+            this.webBrowser1.Size = new System.Drawing.Size(959, 420);
             this.webBrowser1.TabIndex = 0;
             // 
-            // textBox1
+            // txt_URL
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(576, 22);
-            this.textBox1.TabIndex = 1;
+            this.txt_URL.Location = new System.Drawing.Point(15, 13);
+            this.txt_URL.Name = "txt_URL";
+            this.txt_URL.Size = new System.Drawing.Size(707, 22);
+            this.txt_URL.TabIndex = 1;
             // 
-            // button1
+            // btn_home
             // 
-            this.button1.Location = new System.Drawing.Point(31, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_home.Location = new System.Drawing.Point(935, 13);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(54, 23);
+            this.btn_home.TabIndex = 2;
+            this.btn_home.Text = "Inicio";
+            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
-            // button2
+            // btn_Ir
             // 
-            this.button2.Location = new System.Drawing.Point(31, 69);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Ir.Location = new System.Drawing.Point(728, 14);
+            this.btn_Ir.Name = "btn_Ir";
+            this.btn_Ir.Size = new System.Drawing.Size(72, 22);
+            this.btn_Ir.TabIndex = 3;
+            this.btn_Ir.Text = "Ir";
+            this.btn_Ir.UseVisualStyleBackColor = true;
+            this.btn_Ir.Click += new System.EventHandler(this.btn_Ir_Click);
             // 
-            // button3
+            // btn_back
             // 
-            this.button3.Location = new System.Drawing.Point(31, 108);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_back.Location = new System.Drawing.Point(872, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(57, 23);
+            this.btn_back.TabIndex = 4;
+            this.btn_back.Text = "Atrás";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
+            // btn_forward
+            // 
+            this.btn_forward.Location = new System.Drawing.Point(806, 14);
+            this.btn_forward.Name = "btn_forward";
+            this.btn_forward.Size = new System.Drawing.Size(59, 22);
+            this.btn_forward.TabIndex = 5;
+            this.btn_forward.Text = "Adelante";
+            this.btn_forward.UseVisualStyleBackColor = true;
+            this.btn_forward.Click += new System.EventHandler(this.btn_forward_Click);
+            // 
+            // btn_close
+            // 
+            this.btn_close.Location = new System.Drawing.Point(899, 462);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(75, 23);
+            this.btn_close.TabIndex = 6;
+            this.btn_close.Text = "Cerrar";
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // cbox_favoritos
+            // 
+            this.cbox_favoritos.FormattingEnabled = true;
+            this.cbox_favoritos.Items.AddRange(new object[] {
+            "www.google.cl",
+            "www.youtube.cl",
+            "www.googlemaps.com",
+            "www.facebook.com"});
+            this.cbox_favoritos.Location = new System.Drawing.Point(93, 47);
+            this.cbox_favoritos.Name = "cbox_favoritos";
+            this.cbox_favoritos.Size = new System.Drawing.Size(707, 24);
+            this.cbox_favoritos.TabIndex = 7;
+            this.cbox_favoritos.SelectedIndexChanged += new System.EventHandler(this.cbox_favoritos_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 16);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Favoritos";
+            // 
+            // chk_visible
+            // 
+            this.chk_visible.AutoSize = true;
+            this.chk_visible.Checked = true;
+            this.chk_visible.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chk_visible.Location = new System.Drawing.Point(823, 49);
+            this.chk_visible.Name = "chk_visible";
+            this.chk_visible.Size = new System.Drawing.Size(70, 20);
+            this.chk_visible.TabIndex = 9;
+            this.chk_visible.Text = "Visible";
+            this.chk_visible.UseVisualStyleBackColor = true;
+            this.chk_visible.CheckedChanged += new System.EventHandler(this.chk_visible_CheckedChanged);
+            // 
+            // txt_pass
+            // 
+            this.txt_pass.Location = new System.Drawing.Point(899, 49);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.PasswordChar = '*';
+            this.txt_pass.Size = new System.Drawing.Size(75, 22);
+            this.txt_pass.TabIndex = 10;
+            this.txt_pass.Visible = false;
+            this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
+            // 
+            // btn_cerrar_retardo
+            // 
+            this.btn_cerrar_retardo.Location = new System.Drawing.Point(747, 462);
+            this.btn_cerrar_retardo.Name = "btn_cerrar_retardo";
+            this.btn_cerrar_retardo.Size = new System.Drawing.Size(137, 23);
+            this.btn_cerrar_retardo.TabIndex = 11;
+            this.btn_cerrar_retardo.Text = "Cerrar retardado";
+            this.btn_cerrar_retardo.UseVisualStyleBackColor = true;
+            this.btn_cerrar_retardo.Click += new System.EventHandler(this.btn_cerrar_retardo_Click);
+            // 
+            // temporizador_cierre
+            // 
+            this.temporizador_cierre.Interval = 5000;
+            this.temporizador_cierre.Tick += new System.EventHandler(this.temporizador_cierre_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1001, 497);
+            this.Controls.Add(this.btn_cerrar_retardo);
+            this.Controls.Add(this.txt_pass);
+            this.Controls.Add(this.chk_visible);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbox_favoritos);
+            this.Controls.Add(this.btn_close);
+            this.Controls.Add(this.btn_forward);
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_Ir);
+            this.Controls.Add(this.btn_home);
+            this.Controls.Add(this.txt_URL);
+            this.Controls.Add(this.Navegador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
+            this.Text = "Navegador Web";
+            this.Navegador.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,12 +211,20 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Navegador;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txt_URL;
+        private System.Windows.Forms.Button btn_home;
+        private System.Windows.Forms.Button btn_Ir;
+        private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_forward;
+        private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.ComboBox cbox_favoritos;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox chk_visible;
+        private System.Windows.Forms.TextBox txt_pass;
+        private System.Windows.Forms.Button btn_cerrar_retardo;
+        private System.Windows.Forms.Timer temporizador_cierre;
     }
 }
 
