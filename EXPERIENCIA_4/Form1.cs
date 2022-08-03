@@ -25,9 +25,15 @@ namespace EXPERIENCIA_4
         private void btn_Ir_Click(object sender, EventArgs e)
         {
             string URL; // creamos la variable donde se guardará la direccion donde quiero ir
+
             URL = txt_URL.Text; // se guardará el conetenido del cuadro de texto donde el usuario escribe hacia donde 
             //quiere navegar
             webBrowser1.Navigate(URL); // vamos hacia la direccion
+            if (URL.Contains("facebook"))
+            {
+                webBrowser1.Stop();
+                MessageBox.Show("No se puede navegar en este sitio");
+            }
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -84,6 +90,19 @@ namespace EXPERIENCIA_4
         private void temporizador_cierre_Tick(object sender, EventArgs e)
         {
             this.Close(); // el temporizador cierra el formulario
+        }
+
+        private void txt_URL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_URL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                btn_Ir_Click(sender, e);// 
+            }
         }
     }
 }

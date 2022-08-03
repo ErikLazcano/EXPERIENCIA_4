@@ -62,7 +62,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(3, 18);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(959, 420);
+            this.webBrowser1.Size = new System.Drawing.Size(959, 358);
             this.webBrowser1.TabIndex = 0;
             // 
             // txt_URL
@@ -71,6 +71,8 @@
             this.txt_URL.Name = "txt_URL";
             this.txt_URL.Size = new System.Drawing.Size(648, 22);
             this.txt_URL.TabIndex = 1;
+            this.txt_URL.TextChanged += new System.EventHandler(this.txt_URL_TextChanged);
+            this.txt_URL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_URL_KeyPress);
             // 
             // btn_home
             // 
@@ -187,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 497);
+            this.ClientSize = new System.Drawing.Size(1024, 501);
             this.Controls.Add(this.btn_cerrar_retardo);
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.chk_visible);
