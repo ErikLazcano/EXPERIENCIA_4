@@ -104,9 +104,9 @@
             // 
             // btn_forward
             // 
-            this.btn_forward.Location = new System.Drawing.Point(756, 14);
+            this.btn_forward.Location = new System.Drawing.Point(800, 14);
             this.btn_forward.Name = "btn_forward";
-            this.btn_forward.Size = new System.Drawing.Size(76, 22);
+            this.btn_forward.Size = new System.Drawing.Size(32, 22);
             this.btn_forward.TabIndex = 5;
             this.btn_forward.Text = "Adelante";
             this.btn_forward.UseVisualStyleBackColor = true;
