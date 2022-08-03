@@ -49,6 +49,9 @@
             // 
             // Navegador
             // 
+            this.Navegador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Navegador.Controls.Add(this.webBrowser1);
             this.Navegador.Location = new System.Drawing.Point(15, 80);
             this.Navegador.Name = "Navegador";
@@ -59,6 +62,9 @@
             // 
             // webBrowser1
             // 
+            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.webBrowser1.Location = new System.Drawing.Point(3, 18);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
@@ -116,6 +122,7 @@
             // 
             // btn_close
             // 
+            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_close.Location = new System.Drawing.Point(899, 462);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(75, 23);
@@ -172,6 +179,7 @@
             // 
             // btn_cerrar_retardo
             // 
+            this.btn_cerrar_retardo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_cerrar_retardo.Location = new System.Drawing.Point(747, 462);
             this.btn_cerrar_retardo.Name = "btn_cerrar_retardo";
             this.btn_cerrar_retardo.Size = new System.Drawing.Size(137, 23);
@@ -205,6 +213,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Navegador Web";
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.Navegador.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -104,5 +104,17 @@ namespace EXPERIENCIA_4
                 btn_Ir_Click(sender, e);// 
             }
         }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            
+                Control control = (Control)sender;
+
+                // Ensure the Form remains square (Height = Width).
+                if (control.Size.Height != control.Size.Width)
+                {
+                    control.Size = new Size(control.Size.Width, control.Size.Width);
+                }
+            }
     }
 }
