@@ -69,12 +69,12 @@
             // 
             this.txt_URL.Location = new System.Drawing.Point(15, 13);
             this.txt_URL.Name = "txt_URL";
-            this.txt_URL.Size = new System.Drawing.Size(707, 22);
+            this.txt_URL.Size = new System.Drawing.Size(648, 22);
             this.txt_URL.TabIndex = 1;
             // 
             // btn_home
             // 
-            this.btn_home.Location = new System.Drawing.Point(935, 13);
+            this.btn_home.Location = new System.Drawing.Point(923, 13);
             this.btn_home.Name = "btn_home";
             this.btn_home.Size = new System.Drawing.Size(54, 23);
             this.btn_home.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             // btn_Ir
             // 
-            this.btn_Ir.Location = new System.Drawing.Point(728, 14);
+            this.btn_Ir.Location = new System.Drawing.Point(678, 14);
             this.btn_Ir.Name = "btn_Ir";
             this.btn_Ir.Size = new System.Drawing.Size(72, 22);
             this.btn_Ir.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             // btn_back
             // 
-            this.btn_back.Location = new System.Drawing.Point(872, 12);
+            this.btn_back.Location = new System.Drawing.Point(849, 13);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(57, 23);
             this.btn_back.TabIndex = 4;
@@ -104,9 +104,9 @@
             // 
             // btn_forward
             // 
-            this.btn_forward.Location = new System.Drawing.Point(806, 14);
+            this.btn_forward.Location = new System.Drawing.Point(756, 14);
             this.btn_forward.Name = "btn_forward";
-            this.btn_forward.Size = new System.Drawing.Size(59, 22);
+            this.btn_forward.Size = new System.Drawing.Size(76, 22);
             this.btn_forward.TabIndex = 5;
             this.btn_forward.Text = "Adelante";
             this.btn_forward.UseVisualStyleBackColor = true;
